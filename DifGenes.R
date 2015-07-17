@@ -1,7 +1,3 @@
-# ssh cristobal@Notron
-# ssh -p 5263 cristobal@notron.mine.nu
-# cd /home/cristobal/Data/merge
-# R
 
 #################################################################################
 ##3) DIFFERENTIAL EXPRESSION

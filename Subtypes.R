@@ -1,7 +1,3 @@
-# ssh cristobal@Notron
-# ssh -p 5263 cristobal@notron.mine.nu
-# cd /home/cristobal/Data/merge
-# R
 
 #################################################################################
 ##Subtypes con pbcmc

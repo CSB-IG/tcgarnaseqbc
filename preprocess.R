@@ -1,5 +1,3 @@
-# ssh cristobal@Notron
-# ssh -p 5263 cristobal@notron.mine.nu
 
 #################################################################################
 ## Sanos
@@ -12,8 +10,6 @@
 ##		Normal-matched
 ##  Muestras: 101
 #################################################################################
-# cd /home/cristobal/Data/sanos/RNASeq/UNC__IlluminaHiSeq_RNASeq/Level_3/gene
-# R
 
 sanosFiles<-dir()
 sanos<-lapply(sanosFiles, read.delim, sep="\t")
@@ -66,8 +62,6 @@ save(sanos, file="sanosRaw.RData", compress="xz")
 ##		Tumor-matched
 ##  Muestras: 780
 #################################################################################
-# cd /home/cristobal/Data/enfermos/RNASeq/UNC__IlluminaHiSeq_RNASeq/Level_3/gene
-# R
 
 enfermosFiles<-dir()
 enfermos<-lapply(enfermosFiles, read.delim, sep="\t")
@@ -126,8 +120,6 @@ save(enfermos, file="enfermosRaw.RData", compress="xz")
 ##		-HGNC ID(s)
 ##	Unique Results
 #################################################################################
-# cd /home/cristobal/Data/mart
-# R
 # options(width=150)
 
 # annot<-read.delim(file="mart_export.txt", sep="\t")
@@ -189,8 +181,7 @@ save(annot, file="EntreZ_annot.RData", compress="xz")
 ##	Annot=genes|biomart
 ##	targets=sanos+enfermos
 #################################################################################
-# cd /home/cristobal/Data/merge
-# R
+
 options(width=130)
 # load(file="annot.RData")
 load(file="EntreZ_annot.RData")

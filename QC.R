@@ -1,11 +1,7 @@
-# ssh cristobal@Notron
-# ssh -p 5263 cristobal@notron.mine.nu
 
 #################################################################################
 ##QC con BioSeq
 #################################################################################
-# cd /home/cristobal/Data/merge
-# R
 options(width=120)
 load(file="RawFull.RData")
 
@@ -457,5 +453,4 @@ symbol<-as.character(FULLGC_FULLLength_TMM_CPM10_ARSYN$Annot$Symbol.y)
 #write.table(symbol, file = "ListaGenes.txt", sep="\t", quote=FALSE, row.names=FALSE, col.names=FALSE)
 #save(FULLGC_FULLLength_TMM_CPM10_ARSYN, file="FULLGC_FULLLength_TMM_CPM10_ARSYN.RData", compress="xz")
 
-# scp -P 5263 cristobal@notron.mine.nu:/home/cristobal/Data/merge/Norm/* .
                               
